@@ -2,15 +2,15 @@
 
 ## Data
 
-### Databases (`data/databases` and `data/swc`):
+### Databases (located in `data/databases` and `data/swc`):
 
 These are the raw database files.
 
 - Base yeast composite protein network - SWC Data (late 2011 data) (`data/swc/data_yeast.txt`)
-- Gene co-expression data - GSE3431 (2005) (`GSE3431_setA_family.pcl`)
-- Gene ontology - `gene_ontology.obo` (2011-10-31) from GO website.
-- GO annotations - `sgd.gaf` (2011-10-29) from SGD website.
-- iRefIndex - version 19.0 (2022-08-22) - this is for the PUBMED IDs only (for `REL` feature) (this file is located in `data/databases/large`)
+- Gene co-expression data - GSE3431 (2005) (`data/databases/GSE3431_setA_family.pcl`)
+- Gene ontology - `data/databases/gene_ontology.obo` (2011-10-31) from GO website.
+- GO annotations - `data/databases/sgd.gaf` (2011-10-29) from SGD website.
+- iRefIndex - version 19.0 (2022-08-22) - this is for the PUBMED IDs only (for `REL` feature) (this file is located in `data/databases/large/irefindex 559292 mitab26.zip`)
 - DIP PPIN - `Scere20170205.txt` (2017-02-05)
 - CYC2008 (already provided by the SWC software; this is located in `data/swc`)
 
