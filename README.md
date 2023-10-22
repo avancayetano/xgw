@@ -74,6 +74,10 @@ The following sequence is how the scripts were run in order from the very start 
 
 `preprocessor.py` > `dip_preprocessor.py` > `co_exp_scoring.py` > `rel_scoring.py` > TCSS (see next section) > SWC (see next section) > `weighting.py` > `evaluate_comp_edges.py` > `evaluate_clusters.py` > `visualize_results.py`.
 
+## Results and Supplementary Materials
+
+Results (figures) can be found in `results/`. These graphs were derived from performance evaluations in `data/evals/` and `data/training/` (for the feature importances). Moreover, a supplementary material document is also provided here (`SupplementaryMaterial.pdf`).
+
 ## External Software packages/services used
 
 ### TCSS. (`TCSS/`)
