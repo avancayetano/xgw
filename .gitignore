@@ -174,3 +174,5 @@ typings/
 !irefindex 559292 mitab26.zip
 
 *_env/
+
+tests/

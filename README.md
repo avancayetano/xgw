@@ -7,21 +7,27 @@
 These are the raw and external database files used in this study.
 
 - Original composite protein network. (`data/swc/data_yeast.txt`)
-  - This is the yeast composite protein network used in SWC [12].
+  - This is the yeast composite protein network used in SWC [[12]](#12).
   - This has the following features: TOPO, TOPO_L2, STRING, and CO_OCCUR.
-- Gene co-expression data. (`data/databases/GSE3431_setA_family.pcl`)
-  - GSE3431 [10] was used, which contains 36 time points of gene expression profiles of yeast.
-- Gene ontology.(`data/databases/gene_ontology.obo` )
-  - Version 2011-10-31 was used [1,3], which was downloaded from the GO website.
-- GO annotations. (`data/databases/sgd.gaf`)
-  - Version 2011-10-29 was used , which was downloaded from the SGD website [2].
-- iRefIndex. (`data/databases/large/irefindex 559292 mitab26.zip`)
-  - Version 19.0 (2022-08-22) was used [8], which was downloaded from the iRefIndex website.
+  - Link: https://www.comp.nus.edu.sg/~wongls/projects/complexprediction/SWC-31oct14/
+- Gene co-expression data (GSE3431 [[10]](#10)). (`data/databases/GSE3431_setA_family.pcl`)
+  - GSE3431 was used, which was downloaded from the SGD website.
+  - Link: http://sgd-archive.yeastgenome.org/expression/microarray/Tu_2005_PMID_16254148/ (`GSE3431_setA_family.pcl`)
+- Gene ontology [[1]](#1)[[3]](#3). (`data/databases/gene_ontology.obo` )
+  - Version 2011-10-31 was used, which was downloaded from the GO website.
+  - Link: http://release.geneontology.org/2011-11-01/ontology/index.html (`gene_ontology.obo`)
+- GO annotations [[2]](#2). (`data/databases/sgd.gaf`)
+  - Version 2011-10-29 was used, which was downloaded from the GO website and was provided by SGD.
+  - Link: http://release.geneontology.org/2011-11-01/annotations/index.html (`sgd.gaf.gz`)
+- iRefIndex [[8]](#8). (`data/databases/large/irefindex 559292 mitab26.zip`)
+  - Version 19.0 (2022-08-22) was used, which was downloaded from the iRefIndex website.
   - **Note**: Only the publication entries before 2012 were selected from this database.
   - **Note**: Due to the large size of the iRefIndex database, it is zipped so you need to extract it.
-- DIP PPIN. (`data/databases/Scere20170205.txt`)
-  - Version 2017-02-05 was used [9], which was downloaded from the DIP website.
-- CYC2008. (`data/swc/complexes_CYC.txt`) [7]
+  - Link: https://irefindex.vib.be/wiki/index.php/README_MITAB2.6_for_iRefIndex_19.0
+- DIP PPIN [[9]](#9). (`data/databases/Scere20170205.txt`)
+  - Version 2017-02-05 was used, which was downloaded from the DIP website.
+  - Link: https://dip.doe-mbi.ucla.edu/dip/Main.cgi
+- CYC2008 [[7]](#7). (`data/swc/complexes_CYC.txt`)
   - This was already provided by the SWC software package.
 
 ### Preprocessed Data. (`data/preprocessed`)
@@ -82,7 +88,7 @@ Results (figures) can be found in `results/`. These graphs were derived from per
 
 ### TCSS. (`TCSS/`)
 
-This study uses the Topological Clustering Semantic Similarity (TCSS) [6] software package proposed by Jain & Bader (2010) on their study: _An improved method for scoring protein-protein
+This study uses the Topological Clustering Semantic Similarity (TCSS) [[6]](#6) software package proposed by Jain & Bader (2010) on their study: _An improved method for scoring protein-protein
 interactions using semantic similarity within the gene ontology._
 
 Requirements: Python.
@@ -105,7 +111,7 @@ For the DIP composite network, the following command was used:
 
 ### SWC
 
-This study also uses the SWC [12] software package and source files. The SWC method was proposed by Yong et. al. (2012) on their study: _Supervised maximum-likelihood weighting of composite protein networks for complex prediction_. We would like to thank the authors of SWC, the main inspiration for this study, for permitting us to use their software and data.
+This study also uses the SWC [[12]](#12) software package and source files. The SWC method was proposed by Yong et. al. (2012) on their study: _Supervised maximum-likelihood weighting of composite protein networks for complex prediction_. We would like to thank the authors of SWC, the main inspiration for this study, for permitting us to use their software and data.
 
 Requirements: Perl.
 
@@ -123,7 +129,7 @@ For the DIP composite network:
 
 ### MCL
 
-The Markov Cluster (MCL) [4,5,11] Algorithm was used to cluster the weighted protein networks.
+The Markov Cluster (MCL) [[4]](#4)[[5]](#5)[[11]](#11) Algorithm was used to cluster the weighted protein networks.
 
 Requirements: MCL.
 
@@ -159,71 +165,26 @@ Also, make sure that you have already downloaded the SWC software (as well as Pe
 
 ## References (for the data and software used)
 
-[1] M Ashburner, C A Ball, J A Blake, D Botstein, H Butler, J M Cherry, A P Davis, K Dolinski, S S Dwight, J T Eppig, M A Harris, D P Hill, L Issel-Tarver, A Kasarskis, S Lewis, J C Matese, J E Richardson, M Ringwald, G M Rubin, and G Sherlock. Gene ontology: tool for the unification of
-biology. the gene ontology consortium. Nat. Genet., 25(1):25–29, May 2000.
+<a id="1">[1]</a> M Ashburner, C A Ball, J A Blake, D Botstein, H Butler, J M Cherry, A P Davis, K Dolinski, S S Dwight, J T Eppig, M A Harris, D P Hill, L Issel-Tarver, A Kasarskis, S Lewis, J C Matese, J E Richardson, M Ringwald, G M Rubin, and G Sherlock. Gene ontology: tool for the unification of biology. the gene ontology consortium. Nat. Genet., 25(1):25–29, May 2000.
 
-[2] J Michael Cherry, Eurie L Hong, Craig Amundsen, Rama Balakrishnan, Gail Binkley, Esther T
-Chan, Karen R Christie, Maria C Costanzo, Selina S Dwight, Stacia R Engel, Dianna G Fisk,
-Jodi E Hirschman, Benjamin C Hitz, Kalpana Karra, Cynthia J Krieger, Stuart R Miyasato, Rob S
-Nash, Julie Park, Marek S Skrzypek, Matt Simison, Shuai Weng, and Edith D Wong. Saccharomyces genome database: the genomics resource of budding yeast. Nucleic Acids Res., 40(Database
-issue):D700–5, January 2012.
+<a id="2">[2]</a> J Michael Cherry, Eurie L Hong, Craig Amundsen, Rama Balakrishnan, Gail Binkley, Esther T Chan, Karen R Christie, Maria C Costanzo, Selina S Dwight, Stacia R Engel, Dianna G Fisk,Jodi E Hirschman, Benjamin C Hitz, Kalpana Karra, Cynthia J Krieger, Stuart R Miyasato, Rob S Nash, Julie Park, Marek S Skrzypek, Matt Simison, Shuai Weng, and Edith D Wong. Saccharomyces genome database: the genomics resource of budding yeast. Nucleic Acids Res., 40(Database issue):D700–5, January 2012.
 
-[3] The Gene Ontology Consortium, Suzi A Aleksander, James Balhoff, Seth Carbon, J Michael Cherry,
-Harold J Drabkin, Dustin Ebert, Marc Feuermann, Pascale Gaudet, Nomi L Harris, David P Hill,
-Raymond Lee, Huaiyu Mi, Sierra Moxon, Christopher J Mungall, Anushya Muruganugan, Tremayne
-Mushayahama, Paul W Sternberg, Paul D Thomas, Kimberly Van Auken, Jolene Ramsey, Deborah A
-Siegele, Rex L Chisholm, Petra Fey, Maria Cristina Aspromonte, Maria Victoria Nugnes, Federica
-Quaglia, Silvio Tosatto, Michelle Giglio, Suvarna Nadendla, Giulia Antonazzo, Helen Attrill, Gil
-dos Santos, Steven Marygold, Victor Strelets, Christopher J Tabone, Jim Thurmond, Pinglei Zhou,
-Saadullah H Ahmed, Praoparn Asanitthong, Diana Luna Buitrago, Meltem N Erdol, Matthew C
-Gage, Mohamed Ali Kadhum, Kan Yan Chloe Li, Miao Long, Aleksandra Michalak, Angeline Pesala,
-Armalya Pritazahra, Shirin C C Saverimuttu, Renzhi Su, Kate E Thurlow, Ruth C Lovering, Colin
-Logie, Snezhana Oliferenko, Judith Blake, Karen Christie, Lori Corbani, Mary E Dolan, Harold J
-Drabkin, David P Hill, Li Ni, Dmitry Sitnikov, Cynthia Smith, Alayne Cuzick, James Seager, Laurel
-Cooper, Justin Elser, Pankaj Jaiswal, Parul Gupta, Pankaj Jaiswal, Sushma Naithani, Manuel Lera-
-Ramirez, Kim Rutherford, Valerie Wood, Jeffrey L De Pons, Melinda R Dwinell, G Thomas Hayman,
-Mary L Kaldunski, Anne E Kwitek, Stanley J F Laulederkind, Marek A Tutaj, Mahima Vedi, Shur-
-Jen Wang, Peter D’Eustachio, Lucila Aimo, Kristian Axelsen, Alan Bridge, Nevila Hyka-Nouspikel,
-Anne Morgat, Suzi A Aleksander, J Michael Cherry, Stacia R Engel, Kalpana Karra, Stuart R
-Miyasato, Robert S Nash, Marek S Skrzypek, Shuai Weng, Edith D Wong, Erika Bakker, Tanya Z
-Berardini, Leonore Reiser, Andrea Auchincloss, Kristian Axelsen, Ghislaine Argoud-Puy, Marie-
-Claude Blatter, Emmanuel Boutet, Lionel Breuza, Alan Bridge, Cristina Casals-Casas, Elisabeth
-Coudert, Anne Estreicher, Maria Livia Famiglietti, Marc Feuermann, Arnaud Gos, Nadine Gruaz-
-Gumowski, Chantal Hulo, Nevila Hyka-Nouspikel, Florence Jungo, Philippe Le Mercier, Damien
-Lieberherr, Patrick Masson, Anne Morgat, Ivo Pedruzzi, Lucille Pourcel, Sylvain Poux, Catherine
-Rivoire, Shyamala Sundaram, Alex Bateman, Emily Bowler-Barnett, Hema Bye-A-Jee, Paul Denny,
-Alexandr Ignatchenko, Rizwan Ishtiaq, Antonia Lock, Yvonne Lussi, Michele Magrane, Maria J
-Martin, Sandra Orchard, Pedro Raposo, Elena Speretta, Nidhi Tyagi, Kate Warner, Rossana Zaru,
-Alexander D Diehl, Raymond Lee, Juancarlos Chan, Stavros Diamantakis, Daniela Raciti, Mag-
-dalena Zarowiecki, Malcolm Fisher, Christina James-Zorn, Virgilio Ponferrada, Aaron Zorn, Sridhar
-Ramachandran, Leyla Ruzicka, and Monte Westerfield. The Gene Ontology knowledgebase in 2023.
-Genetics, 224(1):iyad031, 03 2023.
+<a id="3">[3]</a> The Gene Ontology Consortium, Suzi A Aleksander, James Balhoff, Seth Carbon, J Michael Cherry, Harold J Drabkin, Dustin Ebert, Marc Feuermann, Pascale Gaudet, Nomi L Harris, David P Hill, Raymond Lee, Huaiyu Mi, Sierra Moxon, Christopher J Mungall, Anushya Muruganugan, Tremayne Mushayahama, Paul W Sternberg, Paul D Thomas, Kimberly Van Auken, Jolene Ramsey, Deborah A Siegele, Rex L Chisholm, Petra Fey, Maria Cristina Aspromonte, Maria Victoria Nugnes, Federica Quaglia, Silvio Tosatto, Michelle Giglio, Suvarna Nadendla, Giulia Antonazzo, Helen Attrill, Gil dos Santos, Steven Marygold, Victor Strelets, Christopher J Tabone, Jim Thurmond, Pinglei Zhou, Saadullah H Ahmed, Praoparn Asanitthong, Diana Luna Buitrago, Meltem N Erdol, Matthew C Gage, Mohamed Ali Kadhum, Kan Yan Chloe Li, Miao Long, Aleksandra Michalak, Angeline Pesala, Armalya Pritazahra, Shirin C C Saverimuttu, Renzhi Su, Kate E Thurlow, Ruth C Lovering, Colin Logie, Snezhana Oliferenko, Judith Blake, Karen Christie, Lori Corbani, Mary E Dolan, Harold J Drabkin, David P Hill, Li Ni, Dmitry Sitnikov, Cynthia Smith, Alayne Cuzick, James Seager, Laurel Cooper, Justin Elser, Pankaj Jaiswal, Parul Gupta, Pankaj Jaiswal, Sushma Naithani, Manuel Lera-Ramirez, Kim Rutherford, Valerie Wood, Jeffrey L De Pons, Melinda R Dwinell, G Thomas Hayman, Mary L Kaldunski, Anne E Kwitek, Stanley J F Laulederkind, Marek A Tutaj, Mahima Vedi, Shur-Jen Wang, Peter D’Eustachio, Lucila Aimo, Kristian Axelsen, Alan Bridge, Nevila Hyka-Nouspikel, Anne Morgat, Suzi A Aleksander, J Michael Cherry, Stacia R Engel, Kalpana Karra, Stuart R Miyasato, Robert S Nash, Marek S Skrzypek, Shuai Weng, Edith D Wong, Erika Bakker, Tanya Z Berardini, Leonore Reiser, Andrea Auchincloss, Kristian Axelsen, Ghislaine Argoud-Puy, Marie-Claude Blatter, Emmanuel Boutet, Lionel Breuza, Alan Bridge, Cristina Casals-Casas, Elisabeth Coudert, Anne Estreicher, Maria Livia Famiglietti, Marc Feuermann, Arnaud Gos, Nadine Gruaz-Gumowski, Chantal Hulo, Nevila Hyka-Nouspikel, Florence Jungo, Philippe Le Mercier, Damien Lieberherr, Patrick Masson, Anne Morgat, Ivo Pedruzzi, Lucille Pourcel, Sylvain Poux, Catherine Rivoire, Shyamala Sundaram, Alex Bateman, Emily Bowler-Barnett, Hema Bye-A-Jee, Paul Denny, Alexandr Ignatchenko, Rizwan Ishtiaq, Antonia Lock, Yvonne Lussi, Michele Magrane, Maria J Martin, Sandra Orchard, Pedro Raposo, Elena Speretta, Nidhi Tyagi, Kate Warner, Rossana Zaru,Alexander D Diehl, Raymond Lee, Juancarlos Chan,Stavros Diamantakis, Daniela Raciti, Mag-dalena Zarowiecki, Malcolm Fisher, Christina James-Zorn, Virgilio Ponferrada, Aaron Zorn, Sridhar Ramachandran, Leyla Ruzicka, and Monte Westerfield. The Gene Ontology knowledgebase in 2023. Genetics, 224(1):iyad031, 03 2023.
 
-[4] Stijn Dongen. Graph clustering by flow simulation. PhD thesis, Center for Math and Computer
-Science (CWI), 05 2000.
+<a id="4">[4]</a> Stijn Dongen. Graph clustering by flow simulation. PhD thesis, Center for Math and Computer Science (CWI), 05 2000.
 
-[5] A. J. Enright, S. Van Dongen, and C. A. Ouzounis. An efficient algorithm for large-scale detection
-of protein families. Nucleic Acids Res, 30(7):1575–1584, Apr 2002.
-20
+<a id="5">[5]</a> A. J. Enright, S. Van Dongen, and C. A. Ouzounis. An efficient algorithm for large-scale detection of protein families. Nucleic Acids Res, 30(7):1575–1584, Apr 2002.20
 
-[6] Shobhit Jain and Gary D. Bader. An improved method for scoring protein-protein interactions using
-semantic similarity within the gene ontology. BMC Bioinformatics, 11(1):562, Nov 2010.
+<a id="6">[6]</a> Shobhit Jain and Gary D. Bader. An improved method for scoring protein-protein interactions using semantic similarity within the gene ontology. BMC Bioinformatics, 11(1):562, Nov 2010.
 
-[7] Shuye Pu, Jessica Wong, Brian Turner, Emerson Cho, and Shoshana J Wodak. Up-to-date catalogues
-of yeast protein complexes. Nucleic Acids Res., 37(3):825–831, February 2009.
+<a id="7">[7]</a> Shuye Pu, Jessica Wong, Brian Turner, Emerson Cho, and Shoshana J Wodak. Up-to-date catalogues of yeast protein complexes. Nucleic Acids Res., 37(3):825–831, February 2009.
 
-[8] Sabry Razick, George Magklaras, and Ian M Donaldson. iRefIndex: a consolidated protein interac-
-tion database with provenance. BMC Bioinformatics, 9:405, September 2008.
+<a id="8">[8]</a> Sabry Razick, George Magklaras, and Ian M Donaldson. iRefIndex: a consolidated protein interaction database with provenance. BMC Bioinformatics, 9:405, September 2008.
 
-[9] Lukasz Salwinski, Christopher S Miller, Adam J Smith, Frank K Pettit, James U Bowie, and David
-Eisenberg. The database of interacting proteins: 2004 update. Nucleic Acids Res., 32(Database
-issue):D449–51, January 2004.
+<a id="9">[9]</a> Lukasz Salwinski, Christopher S Miller, Adam J Smith, Frank K Pettit, James U Bowie, and David Eisenberg. The database of interacting proteins: 2004 update. Nucleic Acids Res., 32(Database issue):D449–51, January 2004.
 
-[10] B. P. Tu, A. Kudlicki, M. Rowicka, and S. L. McKnight. Logic of the yeast metabolic cycle: temporal
-compartmentalization of cellular processes. Science, 310(5751):1152–1158, Nov 2005.
+<a id="10">[10]</a> B. P. Tu, A. Kudlicki, M. Rowicka, and S. L. McKnight. Logic of the yeast metabolic cycle: temporal compartmentalization of cellular processes. Science, 310(5751):1152–1158, Nov 2005.
 
-[11] Stijn Van Dongen. Graph clustering via a discrete uncoupling process. SIAM Journal on Matrix
-Analysis and Applications, 30(1):121–141, 2008.
+<a id="11">[11]</a> Stijn Van Dongen. Graph clustering via a discrete uncoupling process. SIAM Journal on Matrix Analysis and Applications, 30(1):121–141, 2008.
 
-[12] C. H. Yong, G. Liu, H. N. Chua, and L. Wong. Supervised maximum-likelihood weighting of
-composite protein networks for complex prediction. BMC Syst Biol, 6 Suppl 2(Suppl 2):S13, 2012.
+<a id="12">[12]</a> C. H. Yong, G. Liu, H. N. Chua, and L. Wong. Supervised maximum-likelihood weighting of composite protein networks for complex prediction. BMC Syst Biol, 6 Suppl 2(Suppl 2):S13, 2012.
