@@ -151,7 +151,7 @@ which will output `out.{file}.csv.I20` files to `data/clusters`.
 
 ### UniProt ID Mapping
 
-The UniProt Retrieve/ID mapping service was used to map each UniProtKB AC/ID in the DIP PPIN to its corresponding KEGG entry (systematic name). This was used to produce KEGG mapping file in `data/databases/dip_uniprot_kegg_mapped.tsv`.
+The UniProt [[13]](#13) Retrieve/ID mapping service was used to map each UniProtKB AC/ID in the DIP PPIN to its corresponding KEGG entry (systematic name). This was used to produce KEGG mapping file in `data/databases/dip_uniprot_kegg_mapped.tsv`.
 
 Link: https://www.uniprot.org/id-mapping
 
@@ -188,3 +188,5 @@ Also, make sure that you have already downloaded the SWC software (as well as Pe
 <a id="11">[11]</a> Stijn Van Dongen. Graph clustering via a discrete uncoupling process. SIAM Journal on Matrix Analysis and Applications, 30(1):121–141, 2008.
 
 <a id="12">[12]</a> C. H. Yong, G. Liu, H. N. Chua, and L. Wong. Supervised maximum-likelihood weighting of composite protein networks for complex prediction. BMC Syst Biol, 6 Suppl 2(Suppl 2):S13, 2012.
+
+<a id="13">[13]</a> The UniProt Consortium , UniProt: the Universal Protein Knowledgebase in 2023, Nucleic Acids Research, Volume 51, Issue D1, 6 January 2023, Pages D523–D531, https://doi.org/10.1093/nar/gkac1052
