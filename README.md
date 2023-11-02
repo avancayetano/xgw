@@ -173,7 +173,7 @@ Also, make sure that you have already downloaded the SWC software (as well as Pe
 
 <a id="4">[4]</a> Stijn Dongen. Graph clustering by flow simulation. PhD thesis, Center for Math and Computer Science (CWI), 05 2000.
 
-<a id="5">[5]</a> A. J. Enright, S. Van Dongen, and C. A. Ouzounis. An efficient algorithm for large-scale detection of protein families. Nucleic Acids Res, 30(7):1575–1584, Apr 2002.20
+<a id="5">[5]</a> A. J. Enright, S. Van Dongen, and C. A. Ouzounis. An efficient algorithm for large-scale detection of protein families. Nucleic Acids Res, 30(7):1575–1584, Apr 2002.
 
 <a id="6">[6]</a> Shobhit Jain and Gary D. Bader. An improved method for scoring protein-protein interactions using semantic similarity within the gene ontology. BMC Bioinformatics, 11(1):562, Nov 2010.
 
