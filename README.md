@@ -189,4 +189,5 @@ Also, make sure that you have already downloaded the SWC software (as well as Pe
 
 <a id="12">[12]</a> C. H. Yong, G. Liu, H. N. Chua, and L. Wong. Supervised maximum-likelihood weighting of composite protein networks for complex prediction. BMC Syst Biol, 6 Suppl 2(Suppl 2):S13, 2012.
 
-<a id="13">[13]</a> The UniProt Consortium , UniProt: the Universal Protein Knowledgebase in 2023, Nucleic Acids Research, Volume 51, Issue D1, 6 January 2023, Pages D523–D531, https://doi.org/10.1093/nar/gkac1052
+<a id="13">[13]</a> The UniProt Consortium. UniProt: the Universal Protein Knowledgebase in 2023. Nucleic Acids
+Research, 51(D1):D523–D531, 11 2022.
