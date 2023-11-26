@@ -155,6 +155,18 @@ The UniProt [[13]](#13) Retrieve/ID mapping service was used to map each UniProt
 
 Link: https://www.uniprot.org/id-mapping
 
+## Internal software packages used
+
+The following software/packages were used in building XGW:
+
+- Python 3.11.0 [[14]](#14)
+- Polars 0.18.4 [[15]](#15)
+- scikit-learn 1.3.0 [[16]](#16)
+- XGBoost 1.7.6 [[17]](#17)
+- matplotlib 3.7.1 [[18]](#18)
+- seaborn 0.12.2 [[19]](#19)
+- numpy 1.25.0 [[20]](#20)
+
 ## Setup and Installation
 
 To install the required Python packages for XGW, create a Python virtual environment, then run the following command after activating the environment:
@@ -191,3 +203,17 @@ Also, make sure that you have already downloaded the SWC software (as well as Pe
 
 <a id="13">[13]</a> The UniProt Consortium. UniProt: the Universal Protein Knowledgebase in 2023. Nucleic Acids
 Research, 51(D1):D523–D531, 11 2022.
+
+<a id="14">[14]</a> Python Software Foundation. Python Language Reference, version 3.11. Available at http://www.python.org
+
+<a id="15">[15]</a> Ritchie Vink. Polars. In GitHub repository. GitHub. https://github.com/pola-rs/polars
+
+<a id="16">[16]</a> F. Pedregosa, G. Varoquaux, A. Gramfort, V. Michel, B. Thirion, O. Grisel, M. Blondel, P. Prettenhofer, R. Weiss, V. Dubourg, J. Vanderplas, A. Passos, D. Cournapeau, M. Brucher, M. Perrot, and E. Duchesnay. Scikit-learn: Machine learning in Python. Journal of Machine Learning Research, 12:2825–2830, 2011.
+
+<a id="17">[17]</a> Tianqi Chen and Carlos Guestrin. Xgboost: A scalable tree boosting system. In Proceedings of the 22nd acm sigkdd international conference on knowledge discovery and data mining, pages 785–794, 2016.
+
+<a id="18">[18]</a> J. D. Hunter. Matplotlib: A 2d graphics environment. Computing in Science & Engineering, 9(3):90–95, 2007.
+
+<a id="19">[19]</a> Michael L. Waskom. seaborn: statistical data visualization. Journal of Open Source Software, 6(60):3021, 2021.
+
+<a id="20">[20]</a> Charles R. Harris, K. Jarrod Millman, St´efan J. van der Walt, Ralf Gommers, Pauli Virtanen, David Cournapeau, Eric Wieser, Julian Taylor, Sebastian Berg, Nathaniel J. Smith, Robert Kern, Matti Picus, Stephan Hoyer, Marten H. van Kerkwijk, Matthew Brett, Allan Haldane, Jaime Fern´andez del R´ıo, Mark Wiebe, Pearu Peterson, Pierre G´erard-Marchant, Kevin Sheppard, Tyler Reddy, Warren Weckesser, Hameer Abbasi, Christoph Gohlke, and Travis E. Oliphant. Array programming with NumPy. Nature, 585(7825):357–362, September 2020.
